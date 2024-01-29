@@ -16,7 +16,7 @@ public final class AlonsoLevelsEventListener implements Listener {
         final String NAMESPACE = "ALONSO_LEVELS";
         Player player = event.getPlayer();
         int difference = event.getNewExperience() - event.getOldExperience();
-        final double[] totalMulti = {1};
+        final double[] totalMulti = {0};
 
         BoosterFindResult pResult = IBoosterAPI.INSTANCE.getCache(event.getPlayer()).getBoosterDataManager().findActiveBooster(TYPE, NAMESPACE);
         if (pResult instanceof BoosterFindResult.Success boosterResult) {
@@ -28,7 +28,9 @@ public final class AlonsoLevelsEventListener implements Listener {
             return null;
         }, () -> null);
 
-        AlonsoLevelsAPI.setExperience(player.getUniqueId(), (int) (event.getOldExperience() + calculateAmount(difference, totalMulti[0])));
+        if (totalMulti[0] > 0) {
+            AlonsoLevelsAPI.setExperience(player.getUniqueId(), (int) (event.getOldExperience() + calculateAmount(difference, totalMulti[0])));
+        }
     }
 
     private long calculateAmount(double amount, double multi) {
