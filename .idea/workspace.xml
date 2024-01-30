@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62cbd1ab-0d6d-482d-9e8e-716a71797e8a" name="Changes" comment="api jar update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="62cbd1ab-0d6d-482d-9e8e-716a71797e8a" name="Changes" comment="fixed multi" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,12 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1706421801366</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed multi">
+      <option name="closed" value="true" />
+      <created>1706495394447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706495394447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="api jar update" />
-    <option name="LAST_COMMIT_MESSAGE" value="api jar update" />
+    <MESSAGE value="fixed multi" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed multi" />
   </component>
 </project>
